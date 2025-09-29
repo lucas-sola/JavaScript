@@ -1,0 +1,43 @@
+{
+    "background.windowBackgrounds": [
+        "c:/Users/2anoB/Downloads/wow.gif",
+        "c:/Users/2anoB/Downloads/wow2.gif",
+        "c:/Users/2anoB/Downloads/background/**"
+    ],
+    "background.backgroundBlur": [
+        "0",
+        "0",
+        "0",
+        "0"
+    ],
+    "background.backgroundOpacity": [
+        0.1,
+        0.1,
+        0.1,
+        0.1
+    ],
+    "background.backgroundRepeat": [
+        "No Repeat",
+        "No Repeat",
+        "No Repeat",
+        "No Repeat"
+    ],
+    "background.backgroundSize": [
+        "Cover",
+        "Cover",
+        "Cover",
+        "Cover"
+    ],
+    "background.backgroundSizeValue": [
+        "30",
+        "100%",
+        "100%",
+        "100%"
+    ],
+    "background.backgroundChangeTime": [
+        5,
+        0,
+        0,
+        0
+    ]
+}
