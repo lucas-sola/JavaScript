@@ -1,15 +1,15 @@
 {
     "background.backgroundOpacity": [
+        0.4,
         0.1,
         0.1,
-        0,
         0.1
     ],
     "background.windowBackgrounds": [
-        "c:/Users/2anoB/Downloads/monochrome_samurai__elegance_in_black_and_white_by_nigtck_dkkr0fq.jpg"
+        "c:/Users/2anoB/Downloads/wallhaven-2yzdp6_1920x1080.png"
     ],
     "background.backgroundBlur": [
-        "2",
+        "1",
         "0",
         "0",
         "0"

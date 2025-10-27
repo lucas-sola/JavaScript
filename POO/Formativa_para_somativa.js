@@ -1,36 +1,49 @@
-// EXERCÍCIO 1
+// // const estoque = {
+// //             caixa: 50,
+// //             palete: 10,
+// //             empilhadeira: 2
+// //           };
 
-// const estoque = {    
+// // function verificarEstoque(produto, quantidade, callback) {
+// //     let qtdProduto = estoque[produto]
+// //     console.log(`Nós temos apenas ${qtdProduto} desse produto! ou seja..`)
+// //     if (callback[produto] < quantidade) {
+// //         return console.log(`Estoque insuficiente!`)
+// //     } else {
+// //         return console.log(`Pedido confirmado!`)
+// //     }
+
+// // }
+
+
+// // verificarEstoque("caixa", 40, estoque)
+
+// ///////////////////////////////////////////////////////////////////
+
+// const estoque = {
 //             caixa: 50,
 //             palete: 10,
 //             empilhadeira: 2
 //           };
 
 // function verificarEstoque(produto, quantidade, callback) {
-//     let qtdProduto = estoque[produto]
-//     console.log(`Nós temos apenas ${qtdProduto} desse produto! ou seja..`)
-//     if (callback[produto] < quantidade) {
-//         return console.log(`Estoque insuficiente!`)
-//     } else {
-//         return console.log(`Pedido confirmado!`)
-//     }
+// return callback(produto, quantidade)
+// }
 
+// function conferir(produto, qtd) {
+//     if (estoque[produto] >= qtd) {
+//         return "Pedido aprovado" 
+//     } else {
+//         return "Pedido Negado, estoque insuficiente"
+//     }
 // }
 
 
-// verificarEstoque("caixa", 40, estoque)
+// console.log(verificarEstoque('caixa', 30, conferir))
 
 
-// EXERCÍCIO 2
+// /////////
 
-
-// Crie uma classe Produto com os atributos:
-// nome (string)
-// preco (number)
-// quantidade (number)
-// Implemente os métodos:
-// valorTotal() → retorna o valor total do estoque do produto (preço × quantidade).
-// reporEstoque(qtd) → aumenta a quantidade em estoque do produto.
 
 // class Produto{
 //     constructor(nome, preco, quantidade) {
@@ -51,14 +64,14 @@
 // Prego.reporEstoque(100);
 // console.log(`O valor total deste produto é de: ${Prego.valorTotal()}`)
 
-// EXERCÍCIO 3 
+// // EXERCÍCIO 3 
 
-// Na área de almoxarifado, cada pedido feito para o fornecedor contém um produto por vez, informado no momento da solicitação. O sistema precisa registrar o número do pedido, o nome do produto solicitado, o preço unitário do produto e a quantidade solicitada.
+// // Na área de almoxarifado, cada pedido feito para o fornecedor contém um produto por vez, informado no momento da solicitação. O sistema precisa registrar o número do pedido, o nome do produto solicitado, o preço unitário do produto e a quantidade solicitada.
 
-// O supervisor explicou que precisa:
-// Calcular o valor total do pedido (preço × quantidade).
-// Emitir um resumo contendo o número do pedido, nome do produto, quantidade e valor total.
-// Modele uma classe Pedido que atenda a essa necessidade, criando atributos e métodos adequados
+// // O supervisor explicou que precisa:
+// // Calcular o valor total do pedido (preço × quantidade).
+// // Emitir um resumo contendo o número do pedido, nome do produto, quantidade e valor total.
+// // Modele uma classe Pedido que atenda a essa necessidade, criando atributos e métodos adequados
 
 // class Pedido {
 //     constructor(nome, nrPedido, preco, quantidade) {
@@ -79,18 +92,18 @@
 // pedidoCaro.resumoPedido()
 // console.log(pedidoCaro.valorTotalPedido())
 
-// EXERCÍCIO 4
+// // EXERCÍCIO 4
 
-// Crie uma classe Veiculo com atributos:
-// placa
-// capacidade (em kg)
-// Depois crie duas subclasses:
-// Caminhao → adiciona atributo eixos e motorista.
-// Van → adiciona atributo motorista.
-// Cada subclasse deve implementar o método podeTransportar(carga) que verifica se o veículo consegue realizar a viagem:
-// Van suporta até 5.000 kg.
-// Caminhão suporta até 8.000 kg por eixo.
-// Exemplo: um caminhão com 2 eixos pode transportar até 16.000 kg.
+// // Crie uma classe Veiculo com atributos:
+// // placa
+// // capacidade (em kg)
+// // Depois crie duas subclasses:
+// // Caminhao → adiciona atributo eixos e motorista.
+// // Van → adiciona atributo motorista.
+// // Cada subclasse deve implementar o método podeTransportar(carga) que verifica se o veículo consegue realizar a viagem:
+// // Van suporta até 5.000 kg.
+// // Caminhão suporta até 8.000 kg por eixo.
+// // Exemplo: um caminhão com 2 eixos pode transportar até 16.000 kg.
 
 // class Veiculo {
 //     constructor(placa, capacidade) {
@@ -132,18 +145,18 @@
 // let vanNova = new Van("ABC123", 5000, "Jair Cromado")
 // console.log(vanNova.podeTransportar(6000))
 
-// EXERCÍCIO 5 
+// // EXERCÍCIO 5 
 
 
-// Crie uma classe Funcionario com os atributos:
-// nome
-// salarioBase
-// E um método calcularSalario().
+// // Crie uma classe Funcionario com os atributos:
+// // nome
+// // salarioBase
+// // E um método calcularSalario().
 
-// Crie subclasses:
-// OperadorDeEmpilhadeira → recebe adicional de 10% sobre o salário base.
-// GerenteDeLogistica → recebe adicional fixo de R$ 2.000,00.
-// Simule um array com 5 funcionários diferentes e exiba os salários calculados utilizando for, demonstrando o polimorfismo em ação.
+// // Crie subclasses:
+// // OperadorDeEmpilhadeira → recebe adicional de 10% sobre o salário base.
+// // GerenteDeLogistica → recebe adicional fixo de R$ 2.000,00.
+// // Simule um array com 5 funcionários diferentes e exiba os salários calculados utilizando for, demonstrando o polimorfismo em ação.
 
 // class Funcionario {
 //     constructor(nome, salarioBase) {
@@ -186,18 +199,18 @@
 // }
 // console.log(arraySalarios[0].toFixed(2))
 
-// EXERCÍCIO 6
+// // EXERCÍCIO 6
 
-// Crie uma classe Almoxarifado que armazene um atributo privado #quantidade e o nome de um produto.
+// // Crie uma classe Almoxarifado que armazene um atributo privado #quantidade e o nome de um produto.
 
-// Implemente os métodos:
-// adicionarProduto(nome, qtd)
-// retirarProduto(nome, qtd) (não permitir retirar mais do que existe)
-// consultarEstoque() (retorna todos os produtos e quantidades).
-// Capacidades técnicas avaliadas: Utilizar o paradigma da programação orientada a objetos.
-// Cria corretamente classes com atributos e métodos.
-// Utiliza objetos para representar entidades reais de forma coerente.
-// Utiliza herança e polimorfismo de forma funcional.
+// // Implemente os métodos:
+// // adicionarProduto(nome, qtd)
+// // retirarProduto(nome, qtd) (não permitir retirar mais do que existe)
+// // consultarEstoque() (retorna todos os produtos e quantidades).
+// // Capacidades técnicas avaliadas: Utilizar o paradigma da programação orientada a objetos.
+// // Cria corretamente classes com atributos e métodos.
+// // Utiliza objetos para representar entidades reais de forma coerente.
+// // Utiliza herança e polimorfismo de forma funcional.
 
 // class Almoxarifado {
 //     #quantidade
@@ -230,9 +243,4 @@
 
 // raquetePingPong.retirarProduto(4)
 // console.log(raquetePingPong.consultarEstoque())
-
-
-
-
-
 
