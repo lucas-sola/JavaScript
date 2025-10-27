@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "salve garotas e garotos macacos 😀😀😀"
+  "description": "salve garotas e garotos macacos 😀😀😀",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
